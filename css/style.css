@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.photo {
+  position: relative;
+}
+.photo__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  margin: 10px 10px 8px 10px;
+  transition: border-radius 1s;
+}
+.photo__rank {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  color: #8B0000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  position: absolute;
+  top: 94px;
+  right: 20px;
+}
+
+.details {
+  text-align: center;
+  vertical-align: top;
+  display: block;
+}
+.details__name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #2F4F4F;
+}
+.details__extra {
+  visibility: hidden;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.people {
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+}
+
+.person {
+  margin-bottom: -45px;
+  width: 220px;
+  height: 287px;
+  transition: transform 1s;
+}
+.person:hover {
+  background-color: #EEEEEE;
+  border-radius: 12px;
+  transform: scale(1.2);
+  z-index: 2;
+}
+.person:hover .photo__img {
+  border-radius: 60px;
+}
+.person:hover .details__extra {
+  visibility: visible;
+}
+
+@media screen and (max-width: 999px) {
+  .people {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

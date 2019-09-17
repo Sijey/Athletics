@@ -1,0 +1,42 @@
+@import "reset";
+@import "photo";
+@import "details";
+
+
+.people {
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+}
+
+.person {
+  margin-bottom: -45px;
+  width: 220px;
+  height: 287px;
+  transition: transform 1s;
+
+
+  &:hover {
+    background-color: #EEEEEE;
+    border-radius: 12px;
+    transform: scale(1.2);
+    z-index: 2;
+  
+  
+    .photo__img {
+      border-radius: 60px;
+    }
+    
+  .details__extra {
+    visibility: visible;
+  }
+}
+}
+
+@media screen and (max-width: 999px) {
+  .people {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
