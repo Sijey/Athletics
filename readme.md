@@ -1,1 +1,1 @@
-- [LINK](https://Sijey.github.io/Athletes/)
+- [LINK](https://Sijey.github.io/Athletics/)
